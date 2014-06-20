@@ -27,7 +27,13 @@
 //  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface EnquiryService : NSObject
+@class EnquiryResult;
+
+@interface EnquiryService : NSObject <UITableViewDataSource>
+- (instancetype)initWithTodayCell;
+- (void)loadPosts:(NSInteger)count completion:(void (^)(NSError* error)) handler;
+- (EnquiryResult *)postAtIndex:(NSInteger)index;
 
 @end

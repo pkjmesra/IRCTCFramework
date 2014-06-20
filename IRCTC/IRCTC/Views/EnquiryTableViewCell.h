@@ -1,5 +1,5 @@
 //
-//  Route.m
+//  EnquiryTableViewCell.h
 //  IRCTC
 //
 //  Created by Praveen Jha on 20/06/14.
@@ -26,8 +26,12 @@
 //  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "Route.h"
+#import <UIKit/UIKit.h>
 
-@implementation Route
+static const CGFloat TrainEnquiryTableViewCellHeight = 88.0;
+static const CGFloat EnquiryTableViewCellHeight = 210.0;
+static NSString * const EnquiryTableViewCellIdentifier = @"EnquiryTableViewCellIdentifier";
+
+@interface EnquiryTableViewCell : UITableViewCell
 
 @end

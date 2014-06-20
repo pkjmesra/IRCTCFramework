@@ -39,3 +39,5 @@ FOUNDATION_EXPORT const unsigned char IRCTCVersionString[];
 
 #import <IRCTC/BookingService.h>
 #import <IRCTC/EnquiryService.h>
+#import <IRCTC/EnquiryTableViewCell.h>
+#import <IRCTC/EnquiryResult.h>

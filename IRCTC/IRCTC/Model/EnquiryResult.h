@@ -1,5 +1,5 @@
 //
-//  Route.m
+//  EnquiryResult.h
 //  IRCTC
 //
 //  Created by Praveen Jha on 20/06/14.
@@ -26,8 +26,8 @@
 //  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "Route.h"
+#import <Foundation/Foundation.h>
 
-@implementation Route
-
+@interface EnquiryResult : NSObject
+@property (nonatomic, assign) NSInteger postId;
 @end

@@ -36,6 +36,10 @@
 		E348221E19544447008AED59 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E348221819544447008AED59 /* User.m */; };
 		E3482220195444CD008AED59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E348221F195444CD008AED59 /* Foundation.framework */; };
 		E34822231954453C008AED59 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E34822221954453C008AED59 /* libxml2.dylib */; };
+		E3482285195455CE008AED59 /* EnquiryResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E3482283195455CE008AED59 /* EnquiryResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3482286195455CE008AED59 /* EnquiryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E3482284195455CE008AED59 /* EnquiryResult.m */; };
+		E348228E19545663008AED59 /* EnquiryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E348228C19545663008AED59 /* EnquiryTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E348228F19545663008AED59 /* EnquiryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E348228D19545663008AED59 /* EnquiryTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		E348221819544447008AED59 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		E348221F195444CD008AED59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E34822221954453C008AED59 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		E3482283195455CE008AED59 /* EnquiryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnquiryResult.h; sourceTree = "<group>"; };
+		E3482284195455CE008AED59 /* EnquiryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnquiryResult.m; sourceTree = "<group>"; };
+		E348228C19545663008AED59 /* EnquiryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnquiryTableViewCell.h; sourceTree = "<group>"; };
+		E348228D19545663008AED59 /* EnquiryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnquiryTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 				E34821E3195442BB008AED59 /* Booking */,
 				E34821EC195442FB008AED59 /* Enquiry */,
 				E348221219544446008AED59 /* Model */,
+				E348228B19545663008AED59 /* Views */,
 				E34821B919544183008AED59 /* IRCTC.h */,
 				E34821B719544183008AED59 /* Supporting Files */,
 			);
@@ -217,6 +226,8 @@
 				E348221619544446008AED59 /* Train.m */,
 				E348221719544447008AED59 /* User.h */,
 				E348221819544447008AED59 /* User.m */,
+				E3482283195455CE008AED59 /* EnquiryResult.h */,
+				E3482284195455CE008AED59 /* EnquiryResult.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +239,15 @@
 				E348221F195444CD008AED59 /* Foundation.framework */,
 			);
 			name = SDKs;
+			sourceTree = "<group>";
+		};
+		E348228B19545663008AED59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E348228C19545663008AED59 /* EnquiryTableViewCell.h */,
+				E348228D19545663008AED59 /* EnquiryTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +269,9 @@
 				E34821DB1954421C008AED59 /* TFHppleElement.h in Headers */,
 				E348221919544447008AED59 /* Route.h in Headers */,
 				E34821FF19544374008AED59 /* RouteService.h in Headers */,
+				E348228E19545663008AED59 /* EnquiryTableViewCell.h in Headers */,
 				E34821F71954433D008AED59 /* PNREnquiry.h in Headers */,
+				E3482285195455CE008AED59 /* EnquiryResult.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,12 +375,14 @@
 				E34821DC1954421C008AED59 /* TFHppleElement.m in Sources */,
 				E34821F419544320008AED59 /* LoginService.m in Sources */,
 				E34821E7195442BB008AED59 /* BookingService.m in Sources */,
+				E348228F19545663008AED59 /* EnquiryTableViewCell.m in Sources */,
 				E34821F0195442FB008AED59 /* EnquiryService.m in Sources */,
 				E34821FC19544356008AED59 /* RunningTrainEnquiry.m in Sources */,
 				E348221C19544447008AED59 /* Train.m in Sources */,
 				E348221A19544447008AED59 /* Route.m in Sources */,
 				E34821F81954433D008AED59 /* PNREnquiry.m in Sources */,
 				E348221E19544447008AED59 /* User.m in Sources */,
+				E3482286195455CE008AED59 /* EnquiryResult.m in Sources */,
 				E34821DE1954421C008AED59 /* XPathQuery.m in Sources */,
 				E34821DA1954421C008AED59 /* TFHpple.m in Sources */,
 				E348220019544374008AED59 /* RouteService.m in Sources */,
@@ -471,6 +495,7 @@
 		E34821CB19544184008AED59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -492,6 +517,7 @@
 		E34821CC19544184008AED59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -561,6 +587,7 @@
 				E34821CC19544184008AED59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E34821CD19544184008AED59 /* Build configuration list for PBXNativeTarget "IRCTCTests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +596,7 @@
 				E34821CF19544184008AED59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
